@@ -1,2 +1,2 @@
 # ArMPro
-Multimodal Arabic Propaganda dataset
+This repo contains the Arabic multimodal propaganda dataset. 
