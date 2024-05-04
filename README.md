@@ -13,13 +13,13 @@ Example annotated paragraph:
 We split the dataset in a stratified manner, allocating 75\%, 8.5\%, and 16.5\% for training, development, and testing, respectively. During the stratified sampling, the multilabel setting was considered when splitting the dataset. This ensures that persuasion techniques are similarly distributed across the splits.
 
 ### Coarse-grained label distribuition
-| Binary label       | Train | Dev | Test  |
+| **Binary label**     | **Train** | **Dev** | **Test**  |
 |--------------------|-------|-----|-------|
 | Propagandistic     | 3,777 | 425 | 832   |
 | Non-Propagandistic | 2,225 | 247 | 494   |
 | **Total**              | **6,002** | **672** | **1,326** |
 
-| Coarse-grained label | Train | Dev | Test  |
+| **Coarse-grained label** | **Train** | **Dev** | **Test**  |
 |----------------------|-------|-----|-------|
 | Manipulative Wording | 3,460 | 387 | 757   |
 | no technique         | 2,225 | 247 | 494   |
@@ -31,32 +31,36 @@ We split the dataset in a stratified manner, allocating 75\%, 8.5\%, and 16.5\% 
 | **Total**                | **8,194** | **917** | **1,805** |
 
 ### Fine-grained label distribuition
-| Propaganda Technique                         | Count |
-|-----------------------------------|-------|
-| Loaded Language                   | 10,388 |
-| Name Calling /Labeling            | 2,012  |
-| Exaggeration /Minimisation        | 1,290  |
-| Questioning the Reputation        | 776   |
-| Obfuscation /Vagueness /Confusion | 756   |
-| Causal Oversimplification         | 389   |
-| Doubt                             | 303   |
-| Appeal to Authority               | 256   |
-| Flag Waving                       | 237   |
-| Repetition                        | 166   |
-| Slogans                           | 144   |
-| Appeal to Fear /Prejudice         | 125   |
-| Consequential Oversimplification  | 110   |
-| Appeal to Hypocrisy               | 108   |
-| False Dilemma /No Choice          | 79    |
-| Conversation Killer               | 72    |
-| Appeal to Time                    | 70    |
-| Appeal to Popularity              | 56    |
-| Appeal to Values                  | 52    |
-| Red Herring                       | 50    |
-| Guilt by Association              | 29    |
-| Whataboutism                      | 28    |
-| Straw Man                         | 25    |
-| **Total**                             | **20,487** |
+
+| **Technique**                        | **Train**  | **Dev**   | **Test**  |
+|----------------------------------|--------|-------|-------|
+| Loaded Language                  | 7,862  | 856   | 1670  |
+| no technique                     | 2,225  | 247   | 494   |
+| Name Calling/Labeling            | 1,526  | 158   | 328   |
+| Exaggeration/Minimisation        | 967    | 113   | 210   |
+| Questioning the Reputation       | 587    | 58    | 131   |
+| Obfuscation/Vagueness/Confusion  | 562    | 62    | 132   |
+| Causal Oversimplification        | 289    | 33    | 67    |
+| Doubt                            | 227    | 27    | 49    |
+| Appeal to Authority              | 192    | 22    | 42    |
+| Flag Waving                      | 174    | 22    | 41    |
+| Repetition                       | 123    | 13    | 30    |
+| Slogans                          | 101    | 19    | 24    |
+| Appeal to Fear/Prejudice         | 93     | 11    | 21    |
+| Appeal to Hypocrisy              | 82     | 9     | 17    |
+| Consequential Oversimplification | 81     | 10    | 19    |
+| False Dilemma/No Choice          | 60     | 6     | 13    |
+| Conversation Killer              | 53     | 6     | 13    |
+| Appeal to Time                   | 52     | 6     | 12    |
+| Appeal to Popularity             | 44     | 4     | 8     |
+| Appeal to Values                 | 38     | 5     | 9     |
+| Red Herring                      | 38     | 4     | 8     |
+| Guilt by Association             | 22     | 2     | 5     |
+| Whataboutism                     | 20     | 4     | 4     |
+| Straw Man                        | 19     | 2     | 4     |
+| **Total**                            | **15,437** | **1,699** | **3,351** |
+
+**Note**: "no technique" refers to paragraphs without any propagandistic techniques use. 
 
 ## Meme Subset (*Coming Soon!*)
 
