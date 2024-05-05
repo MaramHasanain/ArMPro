@@ -1,6 +1,16 @@
 # ArMPro
 This repo contains the *Arabic* multimodal propaganda dataset (**ArMPro**). The dataset covers two modalities, (1) text represented by annotated news paragraphs and (2) images and text represented by memes.
 
+**Table of contents:**
+  * [Text Subset](#text-subset)
+    + [Data splits](#data-splits)
+    + [Coarse-grained label distribuition](#coarse-grained-label-distribuition)
+    + [Fine-grained label distribuition](#fine-grained-label-distribuition)
+  * [Meme Subset (*Coming Soon!*)](#meme-subset-coming-soon)
+  * [Licensing](#licensing)
+  * [Citation](#citation)
+
+
 ## Text Subset
 This dataset represents the largest one to date for fine-grained propaganda detection. It includes **8,000** paragraphs extracted from over **2,800** Arabic news articles, covering a large variety of news domains. 
 
@@ -65,6 +75,10 @@ We split the dataset in a stratified manner, allocating 75\%, 8.5\%, and 16.5\% 
 ## Meme Subset (*Coming Soon!*)
 
 
+
+## Licensing
+
+This dataset is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ## Citation
 If you use our dataset in a scientific publication, we would appreciate using the following citations:
