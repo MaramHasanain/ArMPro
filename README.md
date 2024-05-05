@@ -84,10 +84,11 @@ This dataset is licensed under CC BY-NC-SA 4.0. To view a copy of this license, 
 If you use our dataset in a scientific publication, we would appreciate using the following citations:
 
 ```
-@article{hasanain2024can,
+@inproceedings{hasanain2024can,
   title={Can GPT-4 Identify Propaganda? Annotation and Detection of Propaganda Spans in News Articles},
   author={Hasanain, Maram and Ahmed, Fatema and Alam, Firoj},
-  journal={arXiv preprint arXiv:2402.17478},
+  booktitle = "Proceedings of the 2024 Joint International Conference On Computational Linguistics, Language Resources And Evaluation",
+  series = "LREC-COLING 2024",
   year={2024}
 }
 ```
