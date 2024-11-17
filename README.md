@@ -1,8 +1,11 @@
 # ArMPro
-This repo contains the *Arabic* multimodal propaganda dataset (**ArMPro**). The dataset covers two modalities, (1) text represented by annotated news paragraphs and (2) images and text represented by memes.
+This repo contains the *Arabic* propaganda dataset (**ArMPro**).
+<!-- The dataset covers two modalities, (1) text represented by annotated news paragraphs and (2) images and text represented by memes. -->
+
+![License](https://img.shields.io/badge/license-CC--BY--NC--SA-blue) [![Paper](https://img.shields.io/badge/Paper-Download%20PDF-green)](https://aclanthology.org/2024.lrec-main.244.pdf)
 
 **Table of contents:**
-  * [Text Subset](#text-subset)
+  * [Dataset](#dataset)
     + [Data splits](#data-splits)
     + [Coarse-grained label distribuition](#coarse-grained-label-distribuition)
     + [Fine-grained label distribuition](#fine-grained-label-distribuition)
@@ -11,8 +14,8 @@ This repo contains the *Arabic* multimodal propaganda dataset (**ArMPro**). The 
   * [Citation](#citation)
 
 
-## Text Subset
-This dataset represents the largest one to date for fine-grained propaganda detection. It includes **8,000** paragraphs extracted from over **2,800** Arabic news articles, covering a large variety of news domains. 
+## Dataset
+This dataset represents the largest one to date for fine-grained propaganda detection. It includes **8,000** paragraphs extracted from over **2,800** Arabic news articles, covering a large variety of news domains.
 
 
 Example annotated paragraph:
@@ -70,9 +73,9 @@ We split the dataset in a stratified manner, allocating 75\%, 8.5\%, and 16.5\% 
 | Straw Man                        | 19     | 2     | 4     |
 | **Total**                            | **15,437** | **1,699** | **3,351** |
 
-**Note**: "no technique" refers to paragraphs without any propagandistic techniques use. 
+**Note**: "no technique" refers to paragraphs without any propagandistic techniques use.
 
-## Meme Subset (*Coming Soon!*)
+<!-- ## Meme Subset (*Coming Soon!*) -->
 
 
 
@@ -83,12 +86,27 @@ This dataset is licensed under CC BY-NC-SA 4.0. To view a copy of this license, 
 ## Citation
 If you use our dataset in a scientific publication, we would appreciate using the following citations:
 
+- Maram Hasanain, Fatema Ahmad, and Firoj Alam. 2024. Can GPT-4 Identify Propaganda? Annotation and Detection of Propaganda Spans in News Articles. In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), pages 2724–2744, Torino, Italia. ELRA and ICCL.
+
 ```
-@inproceedings{hasanain2024can,
-  title={Can GPT-4 Identify Propaganda? Annotation and Detection of Propaganda Spans in News Articles},
-  author={Hasanain, Maram and Ahmed, Fatema and Alam, Firoj},
-  booktitle = "Proceedings of the 2024 Joint International Conference On Computational Linguistics, Language Resources And Evaluation",
-  series = "LREC-COLING 2024",
-  year={2024}
+@inproceedings{hasanain-etal-2024-gpt,
+    title = "Can {GPT}-4 Identify Propaganda? Annotation and Detection of Propaganda Spans in News Articles",
+    author = "Hasanain, Maram  and
+      Ahmad, Fatema  and
+      Alam, Firoj",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.244",
+    pages = "2724--2744",
+    abstract = "The use of propaganda has spiked on mainstream and social media, aiming to manipulate or mislead users. While efforts to automatically detect propaganda techniques in textual, visual, or multimodal content have increased, most of them primarily focus on English content. The majority of the recent initiatives targeting medium to low-resource languages produced relatively small annotated datasets, with a skewed distribution, posing challenges for the development of sophisticated propaganda detection models. To address this challenge, we carefully develop the largest propaganda dataset to date, ArPro, comprised of 8K paragraphs from newspaper articles, labeled at the text span level following a taxonomy of 23 propagandistic techniques. Furthermore, our work offers the first attempt to understand the performance of large language models (LLMs), using GPT-4, for fine-grained propaganda detection from text. Results showed that GPT-4{'}s performance degrades as the task moves from simply classifying a paragraph as propagandistic or not, to the fine-grained task of detecting propaganda techniques and their manifestation in text. Compared to models fine-tuned on the dataset for propaganda detection at different classification granularities, GPT-4 is still far behind. Finally, we evaluate GPT-4 on a dataset consisting of six other languages for span detection, and results suggest that the model struggles with the task across languages. We made the dataset publicly available for the community.",
 }
 ```
